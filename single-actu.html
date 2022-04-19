@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#141414">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Studio 210 | Accueil</title>
+</head>
+
+<body>
+    <nav class="display-xl navbar navbar-expand-lg navbar-light bg-light nav-middle w-50">
+        <!-- <a class="navbar-brand" href="#"><img src="public/img/logo.png" class="size-logo ml-5" alt=""></a> -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mr-5 ml-5 space-icon " id="navbarNav">
+
+
+            <a class="nav-link size-icon-menu text-center mt-3" href="index.html"><i class="icon-black fas fa-home"><br><p>Home</p></i></a>
+            <a class="nav-link size-icon-menu text-center mt-3" href="#"><i class="icon-black fas fa-user"><br><p>About Us</p></i></a>
+            <a class="nav-link size-icon-menu text-center mt-3" href="#"><i class="icon-black fas fa-edit"><br><p>Services</p></i></a>
+            <a class="nav-link size-icon-menu text-center mt-3" href="contact.html"><i class="icon-black fas fa-phone"><br><p>Contact</p></i></a>
+            <!-- SWITCH BUTTON DARK / MODE -->
+            <a onclick="myFunction()" class="nav-link size-icon-menu text-center mt-3" href="#"><i class="icon-black fas fa-moon"><br><p>Switch</p></i></a>
+            <!--END SWITCH BUTTON DARK / MODE -->
+        </div>
+    </nav>
+    <!-- BACK TO TOP -->
+
+    <button class="scrollToTopBtn"><i class="fas fa-angle-up"></i></button>
+
+    <!-- END BACK TO TOP -->
+
+    <!-- DARK MODE MOBILE -->
+
+    <button onclick="myFunction()" class="darkMode"><i class="fas fa-moon"></i></button>
+
+    <!-- END DARK MODE MOBILE -->
+
+
+    <!-- DEVIS POPUP -->
+
+    <div class="btn-demande-devis">
+
+    </div>
+
+    <!-- END DEVIS POPUP -->
+
+    <a href="#"><img class="display-sm logo-nav-bot" src="public/img/logo-white.png" alt=""></a>
+
+
+    <div class="display-sm phone">
+        <input type="radio" name="radio" id="input_1">
+        <input type="radio" name="radio" id="input_2">
+        <input type="radio" name="radio" id="input_3" checked="checked">
+        <input type="radio" name="radio" id="input_4">
+        <input type="radio" name="radio" id="input_5">
+
+        <label for="input_1">
+            <a href="index.html">
+                <i class="bx bx-home">
+                    <p class="title-nav">Home</p>
+                </i>
+            </a>
+        </label>
+
+        <label for="input_2">
+            <a href="">
+                <i class="bx bx-user">
+                    <p class="title-nav">A Propos</p>
+                </i>
+            </a>
+        </label>
+
+        <label for="input_3">
+            <a onclick="devisPopUp()" >
+                <i class="pos-bx bx bx-receipt"></i>
+            </a>
+        </label>
+
+        <label for="input_4">
+            <a href="">
+                <i class="bx bx-edit">
+                    <p class="title-nav">Contact</p>
+                </i>
+            </a>
+        </label>
+        <label for="input_5">
+            <a href="contact.html">
+                <i class="bx bx-phone">
+                    <p class="title-nav">Contact</p>
+                </i>
+            </a>
+        </label>
+
+        <div class="circle"></div>
+        <div class="phone_content">
+            <div class="phone_bottom">
+                <div class="indicator"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END BOTTOM NAV -->
+
+    <section id="single-actu">
+        <div class="container">
+            <h2 class="title-actu mb-5">Nom De L'actu</h2>
+
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-8 col-xl-8 pl-4 pr-4">
+                    <div class="container-info-actu-main">
+                        <div class="container-img-actu mb-5">
+                            <img class="hugo" src="public/img/about_brand.jpg" alt="">
+                        </div>
+                        <div class="info-actu-post">
+                            <h4>Cubikon</h4>
+                            <h4>Développement</h4>
+                        </div>
+                        <h5 class="small mb-4"><i class="fa fa-calendar" aria-hidden="true"></i>12 novembre 2020</h5>
+
+
+
+                        <h2>Titre de section </h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repellendus tenetur sequi mollitia voluptatem. At dolore facilis, nihil beatae aliquid nostrum mollitia ducimus? Fuga at corporis, nam inventore sunt cupiditate
+                            id deserunt ex non ipsum dolor odit itaque similique vel! Neque amet, quia beatae dolor inventore, veniam facilis distinctio iusto magni alias dicta facere sint natus. Perspiciatis voluptas eligendi fuga voluptates voluptatum
+                            aliquid ad numquam tenetur saepe nemo magni aut, placeat necessitatibus fugiat atque pariatur hic ullam, quaerat corporis explicabo! Illum deleniti assumenda in iusto error debitis exercitationem blanditiis, nesciunt aperiam
+                            consequatur fugit asperiores, magnam consectetur saepe? Quis, quae. Illo.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repellendus tenetur sequi mollitia voluptatem. At dolore facilis, nihil beatae aliquid nostrum mollitia ducimus? Fuga at corporis, nam inventore sunt cupiditate
+                            id deserunt ex non ipsum dolor odit itaque similique vel! Neque amet, quia beatae dolor inventore, veniam facilis distinctio iusto magni alias dicta facere sint natus. Perspiciatis voluptas eligendi fuga voluptates voluptatum
+                            aliquid ad numquam tenetur saepe nemo magni aut, placeat necessitatibus fugiat atque pariatur hic ullam, quaerat corporis explicabo! Illum deleniti assumenda in iusto error debitis exercitationem blanditiis, nesciunt aperiam
+                            consequatur fugit asperiores, magnam consectetur saepe? Quis, quae. Illo.</p>
+                        <h2>Une autre section </h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit repellendus tenetur sequi mollitia voluptatem. At dolore facilis, nihil beatae aliquid nostrum mollitia ducimus? Fuga at corporis, nam inventore sunt cupiditate
+                            id deserunt ex non ipsum dolor odit itaque similique vel! Neque amet, quia beatae dolor inventore, veniam facilis distinctio iusto magni alias dicta facere sint natus. Perspiciatis voluptas eligendi fuga voluptates voluptatum
+                            aliquid ad numquam tenetur saepe nemo magni aut, placeat necessitatibus fugiat atque pariatur hic ullam, quaerat corporis explicabo! Illum deleniti assumenda in iusto error debitis exercitationem blanditiis, nesciunt aperiam
+                            consequatur fugit asperiores, magnam consectetur saepe? Quis, quae. Illo.</p>
+                        <div class="tab-info mt-5 mb-5">
+                            <span><a href=""><i class="fa fa-arrow-left" aria-hidden="true"></i>POSTS PRÉCÉDENT </a></span>
+                            <span><a href="">POSTS SUIVANT<i class="fa fa-arrow-right" aria-hidden="true"></i> </a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-xl-4 pl-4 pr-4">
+                    <div class="container-info-actu-right">
+                        <h4>Derniers Posts</h4>
+                        <ul class="mb-5">
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                                <p class="small"><i class="fa fa-calendar" aria-hidden="true"></i>12 mai 2021</p>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                                <p class="small"><i class="fa fa-calendar" aria-hidden="true"></i>12 mai 2021</p>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                                <p class="small"><i class="fa fa-calendar" aria-hidden="true"></i>12 mai 2021</p>
+                            </li>
+                        </ul>
+
+
+                        <h4>Catégories</h4>
+                        <ul class="mb-5">
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                            </li>
+                        </ul>
+
+                        <h4>Les Plus Populaires</h4>
+                        <ul>
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                                <p class="small"><i class="fa fa-eye" aria-hidden="true"></i>35465</p>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                                <p class="small"><i class="fa fa-eye" aria-hidden="true"></i>3545</p>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#">Lorem ipsum dolor</a>
+                                <p class="small"><i class="fa fa-eye" aria-hidden="true"></i>354</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="min-vh-25"></div>
+    </section>
+
+    <div id="devis-mobile" class="display-none-devis">
+        <div class="container-devis-mobile">
+            <div class="text-center">
+                <div class="devis-bc" id="devis-bc-mobile">
+
+                    <form action="">
+                        <h3 class="mb-2">Un Projet ?</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-xl-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p class="text-left">Société</p>
+                                            <input type="text" class="display-form " required>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p class="text-left">Téléphone</p>
+                                            <input type="tel" class="display-form " required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p class="text-left">Mail</p>
+                                            <input type="email" class="display-form " required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p class="text-left">Prestation</p>
+                                            <select placeholder="" name="subject" class="display-form" id="subject_input" required>
+                                                <option disabled hidden selected></option>
+                                                <option>Site Web</option>
+                                                <option>Logos</option>
+                                                <option>Flyers</option>
+                                                <option>Affiches</option>
+                                                <option>Cartes de visites</option>
+                                                <option>Google MyBusiness</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 form-group-check text-left mt-2 d-flex align-items-center">
+                                <input type="checkbox" class="display-form-checkbox" id="scales" name="scales" required>
+                                <label for="scales" class="label-class">J’accepte la politique de confidentialité.</label>
+                            </div>
+                        </div>
+
+                        <button class="btn-form mt-2 mb-5">VALIDER</button>
+
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-12">
+                    <div class="social-info mb-3 text-center">
+                        <h3 class="mt-5 mb-5">CONTACT</h3>
+
+                        <a class="bc-fa-facebook" href="https://www.facebook.com/Studio-210-104342771554050" target="_blank"><i class=" fa fa-facebook"></i></a>
+                        <a class="bc-fa-twitter" href="https://twitter.com/STUDIO_210_" target="_blank"><i class=" fa fa-twitter"></i></a>
+                        <a class="bc-fa-linkedin" href="https://www.linkedin.com/company/studio210-linkedin/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a class="bc-fa-instagram" href="https://www.instagram.com/studio210._/" target="_blank"><i class=" fa fa-instagram"></i></a>
+                    </div>
+                    <div class="contact-mail text-center hover-text">
+                        <a class="hover hover-3" href="mailto:paulcollas446@gmail.com">paulcollas446@gmail.com</a>
+
+                    </div>
+
+                    <div class="row  mt-5">
+                        <div class="col-12 col-md-4 col-xl-4  center-info">
+                            <div class="container-footer-info">
+                                <h4 class="padding-title-footer mb-3">Plan du site</h4>
+                                <ul>
+                                    <li class="mb-2"><a href="">information</a> </li>
+                                    <li class="mb-2"><a href=" ">une information plus longue </a> </li>
+                                    <li class="mb-2"><a href="">Voila j'aime bien</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-xl-4  center-info">
+                            <div class="container-footer-info">
+
+                                <h4 class="padding-title-footer mb-3">Contact</h4>
+                                <ul>
+                                    <li class="mb-2"><a href="">information</a> </li>
+                                    <li class="mb-2"><a href=" ">une information plus longue </a> </li>
+                                    <li class="mb-2"><a href="">Voila j'aime bien</a> </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-xl-4  center-info">
+                            <div class="container-footer-info">
+
+                                <h4 class="padding-title-footer mb-3">Devis</h4>
+                                <ul>
+                                    <li class="mb-2"><a href="">information</a> </li>
+                                    <li class="mb-2"><a href=" ">une information plus longue </a> </li>
+                                    <li class="mb-2"><a href="">Voila j'aime bien</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </footer>
+    <div class="display-sm">
+        <br><br><br><br>
+    </div>
+
+
+    <!-- END FOOTER -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $('.carousel-slider').slick({
+            centerMode: true,
+            arrows: false,
+            centerPadding: '10px',
+            slidesToShow: 3,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            }, {
+                breakpoint: 1000,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 2
+                }
+            }]
+        });
+    </script>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        function devisPopUp() {
+            var devis = document.getElementById("devis-mobile");
+            devis.classList.toggle("devis-mobile");
+        }
+    </script>
+
+
+    <script src="js/back_to-top.js"></script>
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- end bootstrap -->
+    <script src="https://kit.fontawesome.com/22fa603230.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

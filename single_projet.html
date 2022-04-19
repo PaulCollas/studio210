@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#141414">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Studio 210 | Accueil</title>
+</head>
+
+<body>
+    <nav class="display-xl navbar navbar-expand-lg navbar-light bg-light nav-middle w-50">
+        <!-- <a class="navbar-brand" href="#"><img src="public/img/logo.png" class="size-logo ml-5" alt=""></a> -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mr-5 ml-5 space-icon " id="navbarNav">
+
+
+            <a class="nav-link size-icon-menu text-center mt-3" href="index.html"><i class="icon-black fas fa-home"><br><p>Home</p></i></a>
+            <a class="nav-link size-icon-menu text-center mt-3" href="#"><i class="icon-black fas fa-user"><br><p>About Us</p></i></a>
+            <a class="nav-link size-icon-menu text-center mt-3" href="#"><i class="icon-black fas fa-edit"><br><p>Services</p></i></a>
+            <a class="nav-link size-icon-menu text-center mt-3" href="contact.html"><i class="icon-black fas fa-phone"><br><p>Contact</p></i></a>
+            <!-- SWITCH BUTTON DARK / MODE -->
+            <a onclick="myFunction()" class="nav-link size-icon-menu text-center mt-3" href="#"><i class="icon-black fas fa-moon"><br><p>Switch</p></i></a>
+            <!--END SWITCH BUTTON DARK / MODE -->
+        </div>
+    </nav>
+    <!-- BACK TO TOP -->
+
+    <button class="scrollToTopBtn"><i class="fas fa-angle-up"></i></button>
+
+    <!-- END BACK TO TOP -->
+
+    <!-- DARK MODE MOBILE -->
+
+    <button onclick="myFunction()" class="darkMode"><i class="fas fa-moon"></i></button>
+
+    <!-- END DARK MODE MOBILE -->
+
+    <!-- NAV LEFT SIDE -->
+
+
+
+
+    <!-- END NAV LEFT SIDE -->
+
+    <!-- DEVIS POPUP -->
+
+    <div class="btn-demande-devis">
+
+    </div>
+
+    <!-- END DEVIS POPUP -->
+
+    <a href="#"><img class="display-sm logo-nav-bot" src="public/img/logo-white.png" alt=""></a>
+
+
+    <div class="display-sm phone">
+        <input type="radio" name="radio" id="input_1">
+        <input type="radio" name="radio" id="input_2">
+        <input type="radio" name="radio" id="input_3" checked="checked">
+        <input type="radio" name="radio" id="input_4">
+        <input type="radio" name="radio" id="input_5">
+
+        <label for="input_1">
+            <a href="index.html">
+                <i class="bx bx-home">
+                    <p class="title-nav">Home</p>
+                </i>
+            </a>
+        </label>
+
+        <label for="input_2">
+            <a href="">
+                <i class="bx bx-user">
+                    <p class="title-nav">A Propos</p>
+                </i>
+            </a>
+        </label>
+
+        <label for="input_3">
+            <a onclick="devisPopUp()" >
+                <i class="pos-bx bx bx-receipt"></i>
+            </a>
+        </label>
+
+        <label for="input_4">
+            <a href="">
+                <i class="bx bx-edit">
+                    <p class="title-nav">Contact</p>
+                </i>
+            </a>
+        </label>
+        <label for="input_5">
+            <a href="contact.html">
+                <i class="bx bx-phone">
+                    <p class="title-nav">Contact</p>
+                </i>
+            </a>
+        </label>
+
+        <div class="circle"></div>
+        <div class="phone_content">
+            <div class="phone_bottom">
+                <div class="indicator"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END BOTTOM NAV -->
+
+    <section id="brand">
+        <div class="container mb-5">
+            <h2 class="mb-5 text-pos text-center">Nom Du Projet</h2>
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div class="brand-container">
+                        <div class=" img-back-div"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div id="center-text-mobile" class="text-container pl-5 no-padding-mobile">
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                        </p>
+
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                        </p>
+                        <img loading="lazy" class="scale-img mb-5 none-desk" src="public/img/about_brand.jpg" alt="">
+
+
+                        <div class="info-brand">
+                            <div class="item-info-brand text-center">
+                                <h5>+20</h5>
+                                <span>Clients</span>
+                            </div>
+                            <div class="item-info-brand text-center">
+                                <h5>+5</h5>
+                                <span>Sites Web</span>
+                            </div>
+                            <div class="item-info-brand text-center">
+                                <h5>+6</h5>
+                                <span>Logos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+
+    <section id="about">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div id="center-text-mobile" class="text-container no-padding-mobile">
+                        <h2 class="mb-5">Demande du client</h2>
+
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                        </p>
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                        </p>
+                        <img class="scale-img mb-5 none-desk" src="public/img/about_brand.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div class="brand-container">
+                        <div class="img-back-div"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- END ABOUT ME -->
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <div class="text-container text-center  mobile-padding">
+                <!-- <h2 class="mb-5">Services</h2> -->
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card-services">
+                            <div class="blur">
+                                <img class="scale-icon-services" src="public/img/amo_icone.png" alt="">
+                            </div>
+
+                            <div class="content-card-services">
+                                <a href="#devis"><button class="btn-card-devis btn-form">DEVIS</button></a>
+                                <div class="blur">
+                                    <h4>AMO</h4>
+                                    <div class="text-card-services">
+
+                                        <p>
+                                            RÉDACTION CAHIER DES CHARGES
+                                        </p>
+                                        <p>
+                                            STRATÉGIE DE CONSEIL
+                                        </p>
+                                        <p>
+                                            ACCOMPAGNEMENT DIGITAL
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-4">
+
+
+                        <div class="card-services">
+                            <div class="blur">
+                                <img class="scale-icon-services" src="public/img/creation_graphique_icone.png" alt="">
+                            </div>
+                            <div class="content-card-services">
+                                <a href="#devis"><button class="btn-card-devis btn-form">DEVIS</button></a>
+                                <div class="blur">
+                                    <h4>CRÉATION GRAPHIQUE</h4>
+                                    <div class="text-card-services">
+                                        <p>
+                                            LOGO / CHARTE GRAPHIQUE
+                                        </p>
+                                        <p>
+                                            DOCUMENTS COMMERCIAUX
+                                        </p>
+                                        <p>
+                                            SIGNALÉTIQUE
+                                        </p>
+                                        <p>
+                                            CATALOGUES PRODUITS
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-4">
+                        <div class="card-services">
+                            <div class="blur">
+                                <img class="scale-icon-services" src="public/img/video_icone.png" alt="">
+                            </div>
+
+                            <div class="content-card-services">
+                                <a href="#devis"><button class="btn-card-devis btn-form">DEVIS</button></a>
+                                <div class="blur">
+
+                                    <h4>VIDÉO</h4>
+
+
+                                    <div class="text-card-services">
+                                        <p>
+                                            SCÉNARIO
+                                        </p>
+                                        <p>
+                                            STORY BOARD
+                                        </p>
+                                        <p>
+                                            ANIMATION
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea nonumy
+                <br><br> eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+            </p>
+        </div>
+    </section>
+
+    <!-- END SERVICES -->
+
+    <!-- REPONSE DEMANDE -->
+
+    <section id="rep-demande">
+        <div class="container">
+            <h2 class="mb-5 text-pos">Réponse de la demande</h2>
+            <h4 class="mb-5 text-pos">Couleurs</h4>
+
+            <div class="padding-color-card">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-xl-3 mb-4">
+                        <div class="color-card">
+                            <div class="content-color-card">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="red" class="color-card-in mb-3">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3 id="red-text" class=" text-center">
+                                            #141414
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-xl-3 mb-4">
+                        <div class="color-card">
+                            <div class="content-color-card">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="blue" class="color-card-in mb-3">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3 id="blue-text" class=" text-center">
+                                            #141414
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-xl-3 mb-4">
+                        <div class="color-card">
+                            <div class="content-color-card">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="green" class="color-card-in mb-3">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3 id="green-text" class=" text-center">
+                                            #141414
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-xl-3 mb-4">
+                        <div class="color-card">
+                            <div class="content-color-card">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="black" class="color-card-in mb-3">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <h3 id="black-text" class=" text-center">
+                                            #141414
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="center-text-mobile" class="text-container no-padding-mobile">
+
+                <p class="mb-5 mt-5">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                </p>
+            </div>
+            <h4 class="mb-5 text-pos">Typographies</h4>
+            <div class="padding-typo-card">
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <div class="typo-card">
+                            <div class="typo-card-content d-flex align-items-center justify-content-center pt-5">
+                                <h3>Nom de la typo</h3>
+                            </div>
+                            <div class="typo-card-content text-center padding-text">
+                                <p>text d'exmple pour la typo Lorem ipsum dolor sit a totam? Nemo sapiente repudiandae dolore!</p>
+                            </div>
+                        </div>
+                        <p class="pl-5 pr-5 mb-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nam eaque beatae dicta repellat expedita error distinctio mollitia, ipsam, voluptates nulla, et consequatur sunt modi facere dolorum ut! Sint, animi.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-6">
+                        <div class="typo-card">
+                            <div class="typo-card-content d-flex align-items-center justify-content-center pt-5">
+                                <h3>Nom de la typo</h3>
+                            </div>
+                            <div class="typo-card-content text-center padding-text">
+                                <p>text d'exmple pour la typo Lorem ipsum dolor sit a totam? Nemo sapiente repudiandae dolore!</p>
+                            </div>
+                        </div>
+                        <p class="pl-5 pr-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nam eaque beatae dicta repellat expedita error distinctio mollitia, ipsam, voluptates nulla, et consequatur sunt modi facere dolorum ut! Sint, animi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h4 class="mb-5 text-pos">Librairies</h4>
+            <div class="padding-typo-card">
+                <div class="row">
+                    <div class="col-12 col-xl-3">
+                        <div class="lib-card">
+                            <div class="lib-card-content text-justify padding-text">
+                                <img src="public/img/js.png" alt="">
+                            </div>
+                        </div>
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nam eaque beatae dicta repellat expedita error distinctio mollitia, ipsam, voluptates nulla, et consequatur sunt modi facere dolorum ut! Sint, animi.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-3">
+                        <div class="lib-card">
+                            <div class="lib-card-content text-justify padding-text">
+                                <img src="public/img/typeS.png" alt="">
+                            </div>
+
+                        </div>
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nam eaque beatae dicta repellat expedita error distinctio mollitia, ipsam, voluptates nulla, et consequatur sunt modi facere dolorum ut! Sint, animi.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-3">
+                        <div class="lib-card">
+                            <div class="lib-card-content text-justify padding-text">
+                                <img src="public/img/js.png" alt="">
+                            </div>
+                        </div>
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nam eaque beatae dicta repellat expedita error distinctio mollitia, ipsam, voluptates nulla, et consequatur sunt modi facere dolorum ut! Sint, animi.
+                        </p>
+                    </div>
+                    <div class="col-12 col-xl-3">
+                        <div class="lib-card">
+                            <div class="lib-card-content text-justify padding-text">
+                                <img src="public/img/typeS.png" alt="">
+                            </div>
+
+                        </div>
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio nam eaque beatae dicta repellat expedita error distinctio mollitia, ipsam, voluptates nulla, et consequatur sunt modi facere dolorum ut! Sint, animi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <h4 class="mb-5 text-pos">Inspiration</h4>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div id="center-text-mobile" class="text-container no-padding-mobile">
+
+                        <p class="mb-5">
+                            image : moodboard Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                        </p>
+                        <p class="mb-5">
+                            image : moodboard Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                        </p>
+                        <p class="mb-5">
+                            image : moodboard Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                        </p>
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, velit ipsam voluptatibus repellendus odit voluptate ipsum aut quisquam nostrum assumenda consequuntur commodi vel sed. Suscipit molestiae,
+                        </p>
+                        <img class="scale-img mb-5 none-desk" src="public/img/about_brand.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-xl-6">
+                    <div class="brand-container">
+                        <div class="img-back-div"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="public/img/about_brand.jpg" class="center-img-carousel d-block w-50 " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="public/img/about_brand.jpg" class=" center-img-carousel d-block w-50" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="public/img/about_brand.jpg" class=" center-img-carousel d-block w-50" alt="...">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- END REPONSE DEMANDE -->
+
+
+    <div id="devis-mobile" class="display-none-devis">
+        <div class="container-devis-mobile">
+            <div class="text-center">
+                <div class="devis-bc" id="devis-bc-mobile">
+
+                    <form action="">
+                        <h3 class="mb-2">Un Projet ?</h3>
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-xl-6">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p class="text-left">Société</p>
+                                            <input type="text" class="display-form " required>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p class="text-left">Téléphone</p>
+                                            <input type="tel" class="display-form " required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p class="text-left">Mail</p>
+                                            <input type="email" class="display-form " required>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <p class="text-left">Prestation</p>
+                                            <select placeholder="" name="subject" class="display-form" id="subject_input" required>
+                                                <option disabled hidden selected></option>
+                                                <option>Site Web</option>
+                                                <option>Logos</option>
+                                                <option>Flyers</option>
+                                                <option>Affiches</option>
+                                                <option>Cartes de visites</option>
+                                                <option>Google MyBusiness</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 form-group-check text-left mt-2 d-flex align-items-center">
+                                <input type="checkbox" class="display-form-checkbox" id="scales" name="scales" required>
+                                <label for="scales" class="label-class">J’accepte la politique de confidentialité.</label>
+                            </div>
+                        </div>
+
+                        <button class="btn-form mt-2 mb-5">VALIDER</button>
+
+                </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="min-vh-25"></div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center ">
+                <div class="col-12">
+                    <div class="social-info mb-3 text-center">
+                        <a class="bc-fa-facebook" href="https://www.facebook.com/Studio-210-104342771554050" target="_blank"><i class=" fa fa-facebook"></i></a>
+                        <a class="bc-fa-twitter" href="https://twitter.com/STUDIO_210_" target="_blank"><i class=" fa fa-twitter"></i></a>
+                        <a class="bc-fa-linkedin" href="https://www.linkedin.com/company/studio210-linkedin/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a class="bc-fa-instagram" href="https://www.instagram.com/studio210._/" target="_blank"><i class=" fa fa-instagram"></i></a>
+                        <h3 class="mt-5">CONTACT</h3>
+                    </div>
+                    <div class="contact-mail text-center hover-text">
+                        <a class="hover hover-3" href="mailto:paulcollas446@gmail.com">paulcollas446@gmail.com</a>
+
+                    </div>
+
+                    <div class="row  mt-5">
+                        <div class="col-12 col-md-4 col-xl-4  center-info">
+                            <div class="container-footer-info">
+                                <h4 class="padding-title-footer mb-3">Plan du site</h4>
+                                <ul>
+                                    <li class="mb-2"><a href="">information</a> </li>
+                                    <li class="mb-2"><a href=" ">une information plus longue </a> </li>
+                                    <li class="mb-2"><a href="">Voila j'aime bien</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-xl-4  center-info">
+                            <div class="container-footer-info">
+
+                                <h4 class="padding-title-footer mb-3">Contact</h4>
+                                <ul>
+                                    <li class="mb-2"><a href="">information</a> </li>
+                                    <li class="mb-2"><a href=" ">une information plus longue </a> </li>
+                                    <li class="mb-2"><a href="">Voila j'aime bien</a> </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-xl-4  center-info">
+                            <div class="container-footer-info">
+
+                                <h4 class="padding-title-footer mb-3">Devis</h4>
+                                <ul>
+                                    <li class="mb-2"><a href="">information</a> </li>
+                                    <li class="mb-2"><a href=" ">une information plus longue </a> </li>
+                                    <li class="mb-2"><a href="">Voila j'aime bien</a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        $('.carousel-slider').slick({
+            centerMode: true,
+            arrows: false,
+            centerPadding: '10px',
+            slidesToShow: 3,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 1
+                }
+            }, {
+                breakpoint: 1000,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 2
+                }
+            }]
+        });
+    </script>
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        function devisPopUp() {
+            var devis = document.getElementById("devis-mobile");
+            devis.classList.toggle("devis-mobile");
+        }
+    </script>
+
+
+    <script src="js/back_to-top.js"></script>
+
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!-- end bootstrap -->
+    <script src="https://kit.fontawesome.com/22fa603230.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
